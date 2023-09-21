@@ -1,38 +1,106 @@
-.App {
+
+
+
+ body {
+  background-color: aquamarine;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin: 2rem 0;
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-size: 1.2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  margin: 2rem 0;
+  font-weight: 400;
+  color: rgba(21,19,60,0.5);
+  font-size: 1rem;
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+span {
+    text-transform: capitalize;
+    font-weight: bold;
+   
+}
+
+.stories-div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  gap:4rem;
+
+ 
+}
+
+.card {
+  min-width: 45rem; 
+  padding: 4rem;
+  background-color: #ffff;
+  box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+
+
+}
+
+.card-button {
+   display: flex;
+    justify-content: space-between;
+
+}
+
+.search {
+   margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  border: #ffff;
+
+}
+
+.search input{
+  padding: 0.8rem 3rem;
+  font-size: 1rem;
+
+}
+
+
+.pagination_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination_btn button{
+  padding: 0.6rem;
+  cursor: pointer;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+@media(max-width: 767px) {
+  .card {
+    min-width: 30rem; 
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media(max-width: 670px) {
+  .card {
+    min-width: 26rem; 
   }
 }
+
+
+
